@@ -9,7 +9,6 @@ import { ThemeToggle } from "@/components/theme-toggle"
 import { useEffect } from "react"
 
 export default function Home() {
-  // Initialize dark mode based on system preference on first load
   useEffect(() => {
     const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches
     const savedTheme = localStorage.getItem("theme")
@@ -67,9 +66,9 @@ export default function Home() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="container py-24 md:py-32 space-y-8">
+        <section className="container py-24 md:py-32 space-y-8 bg-[url('/background1.jpg')] bg-cover bg-center bg-no-repeat" >
           <div className="flex flex-col md:flex-row gap-8 items-center">
-            <div className="md:w-1/2 space-y-4">
+            <div className="md:w-1/2 space-y-4 bg-black bg-opacity-50 p-6 rounded-xl">
               <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
                 Hi, I'm <span className="text-primary">Vincent Liu!</span>
               </h1>
@@ -87,7 +86,7 @@ export default function Home() {
             </div>
             <div className="md:w-1/2 flex justify-center">
               <div className="relative w-64 h-64 rounded-full overflow-hidden border-4 border-primary">
-                <img src="/placeholder.svg?height=256&width=256" alt="Profile" className="object-cover w-full h-full" />
+                <img src="/prof_pic.jpg?height=256&width=256" alt="Profile" className="object-cover w-full h-full" />
               </div>
             </div>
           </div>
@@ -99,26 +98,39 @@ export default function Home() {
             <h2 className="text-3xl font-bold text-center">About Me</h2>
             <div className="max-w-3xl mx-auto text-center">
               <p className="text-lg text-muted-foreground">
-                I'm a passionate software developer with expertise in modern web technologies. I enjoy building
-                responsive, user-friendly applications that solve real-world problems. With a background in [your
-                background], I bring a unique perspective to every project.
+                I'm an aspiring Software Developer with expertise in modern web technologies. 
+                I love building web applications and constantly exploring new tools, frameworks, and ideas to sharpen my skills.
+                With a background in Computer Science and strong skills in problem-solving, communication, and collaboration, 
+                I bring a unique perspective to every project. 
+              </p>  
+              <p className="text-lg text-muted-foreground">
+                Some of my other interests include cryptography, aviation, and history.
+                I'm especially fascinated by how technology has rapidly advanced over time—and how it will continue to shape our future.
               </p>
               <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div className="p-4 bg-background rounded-lg shadow-sm">
-                  <h3 className="font-medium">Languages</h3>
-                  <p className="text-sm text-muted-foreground">Python, C++, C, Typescript, PostGreSQL, CSS, HTML5, Assembly</p>
+                  <h3 className="font-medium">Programming Languages</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Python, C++, C, JavaScript, TypeScript, SQL, Assembly, Haskell
+                  </p>
                 </div>
                 <div className="p-4 bg-background rounded-lg shadow-sm">
-                  <h3 className="font-medium">Frameworks and Libraries</h3>
-                  <p className="text-sm text-muted-foreground">React, Flask, Node.js, Express, MaterialUI, Tailwind, Langchain</p>
+                  <h3 className="font-medium">Frameworks & Libraries</h3>
+                  <p className="text-sm text-muted-foreground">
+                    React, Flask, Node.js, Express.js, WebGL, Material UI, Tailwind CSS, LiteLLM (LangChain, LangGraph), ReportLab
+                  </p>
                 </div>
                 <div className="p-4 bg-background rounded-lg shadow-sm">
-                  <h3 className="font-medium">Technologies and Concepts</h3>
-                  <p className="text-sm text-muted-foreground">RESTAPIs, Object Ordiented Programming, Agile, Scrum</p>
+                  <h3 className="font-medium">Tools & Platforms</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Git, Docker, RESTful APIs, Nginx, Linux, VS Code,
+                  </p>
                 </div>
                 <div className="p-4 bg-background rounded-lg shadow-sm">
-                  <h3 className="font-medium">Tools & Environments</h3>
-                  <p className="text-sm text-muted-foreground">Git, Linux, VS Code, Docker, NginX</p>
+                  <h3 className="font-medium">Concepts & Methodologies</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Object-Oriented Programming, Agile, Scrum, Test-Driven Development
+                  </p>
                 </div>
               </div>
             </div>
@@ -127,116 +139,121 @@ export default function Home() {
 
         {/* Projects Section */}
         <section id="projects" className="py-16 container">
-          <h2 className="text-3xl font-bold text-center mb-12">My Projects</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">My Project Highlights</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Project 1 */}
             <Card className="group hover:shadow-lg transition-all duration-300">
               <CardHeader>
-                <CardTitle>Project One</CardTitle>
+                <CardTitle>Cognoso</CardTitle>
                 <CardDescription>A web application built with React and Node.js</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="aspect-video rounded-md overflow-hidden bg-muted mb-4">
-                  <img
-                    src="/placeholder.svg?height=200&width=400"
-                    alt="Project One Screenshot"
-                    className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
-                  />
+                <img
+                  src="/cognoso_logo.png"
+                  alt="Project One Screenshot"
+                  className="object-contain w-full h-full transition-transform duration-500 group-hover:scale-105"
+                />
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  This project is a full-stack application that allows users to manage their tasks efficiently. It
-                  features user authentication, real-time updates, and a responsive design.
+                A full-stack web app that lets users upload PDFs (e.g., textbooks) to automatically generate flashcards for studying.
+                Features include user authentication, responsive design, AI-driven flashcard generation, and a chatbot that uses a Retrieval-Augmented Generation (RAG) model to answer questions based solely on the user's uploaded content
                 </p>
               </CardContent>
               <CardFooter className="flex justify-between">
                 <Button variant="outline" size="sm" asChild>
-                  <Link href="https://github.com/yourusername/project-one" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://github.com/andychenbruce/COGNOSO" target="_blank" rel="noopener noreferrer">
                     <Github className="mr-2 h-4 w-4" />
                     Code
                   </Link>
                 </Button>
-                <Button size="sm" asChild>
+                {/* <Button size="sm" asChild>
                   <Link href="https://project-one-demo.example.com" target="_blank" rel="noopener noreferrer">
                     <ExternalLink className="mr-2 h-4 w-4" />
                     Live Demo
                   </Link>
-                </Button>
+                </Button> */}
               </CardFooter>
             </Card>
 
             {/* Project 2 */}
             <Card className="group hover:shadow-lg transition-all duration-300">
               <CardHeader>
-                <CardTitle>Multi-Tool Customer Support Chatbot</CardTitle>
-                <CardDescription>An e-commerce platform with payment integration</CardDescription>
+                <CardTitle>UXly Multi-Tool Customer Support Chatbot</CardTitle>
+                <CardDescription>A Customer Service Chatbot Plugin for WooCommerce (WordPress) sites</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="aspect-video rounded-md overflow-hidden bg-muted mb-4">
                   <img
-                    src="/placeholder.svg?height=200&width=400"
+                    src="/UXly_chbot_logo.png"
                     alt="Project Two Screenshot"
-                    className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
+                    className="object-contain w-full h-full transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  A complete e-commerce solution with product management, shopping cart, and secure checkout. Built with
-                  Next.js, Stripe, and a headless CMS for content management.
+                  A customer service chatbot designed to handle product inquiries and order-related tasks using LangChain, LangGraph, LiteLLM, and Aporia GuardRails.
+                  The Chatbot is designed to be integrated with Woocommerce (Wordpress) e-commerce sites with large product catalogs.
+                  Features include User intent detection, Management of dialogue context, Product recommendation, Product Lookup, Order Lookup, and Order Placement.
                 </p>
               </CardContent>
               <CardFooter className="flex justify-between">
                 <Button variant="outline" size="sm" asChild>
-                  <Link href="https://github.com/yourusername/project-two" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://github.com/UXLY-Chatbot" target="_blank" rel="noopener noreferrer">
                     <Github className="mr-2 h-4 w-4" />
-                    Code
+                    Code (Private Repo)
                   </Link>
                 </Button>
-                <Button size="sm" asChild>
+                {/* <Button size="sm" asChild>
                   <Link href="https://project-two-demo.example.com" target="_blank" rel="noopener noreferrer">
                     <ExternalLink className="mr-2 h-4 w-4" />
-                    Live Demo
+                    Live Demo (Private Repo)
                   </Link>
-                </Button>
+                </Button> */}
               </CardFooter>
             </Card>
 
             {/* Project 3 */}
             <Card className="group hover:shadow-lg transition-all duration-300">
               <CardHeader>
-                <CardTitle>Project Three</CardTitle>
-                <CardDescription>Basic Computer Graphics</CardDescription>
+                <CardTitle>NoteSheet Editor</CardTitle>
+                <CardDescription>NoteSheet / Cheatsheet editor Tool for students</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="aspect-video rounded-md overflow-hidden bg-muted mb-4">
                   <img
-                    src="/placeholder.svg?height=200&width=400"
+                    src="/Notesheet_Ed.png?height=200&width=400"
                     alt="Project Three Screenshot"
                     className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
                 <p className="text-sm text-muted-foreground">
                   A progressive web app that works offline and provides a native-like experience on mobile devices.
-                  Features include push notifications, offline caching, and responsive design.
+                  Features include a 2D knapsack algorithm for efficiently fitting the maximum amount of information within a user-defined page limit, 
+                  a clean and user-friendly UI designed for students, 
+                  an in-place rich text editor (with support for bullet points, numbered lists, etc.), 
+                  automated text resizing, 
+                  and image support (PNG, JPG) with both automatic and manual resizing options.
                 </p>
               </CardContent>
               <CardFooter className="flex justify-between">
                 <Button variant="outline" size="sm" asChild>
-                  <Link href="https://github.com/yourusername/project-three" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://github.com/sopwithcamel110/NED" target="_blank" rel="noopener noreferrer">
                     <Github className="mr-2 h-4 w-4" />
                     Code
                   </Link>
                 </Button>
-                <Button size="sm" asChild>
+                {/* <Button size="sm" asChild>
                   <Link href="https://vincentl03.github.io/CSE160-Live/Assignment_5c/asg5c.html" target="_blank" rel="noopener noreferrer">
                     <ExternalLink className="mr-2 h-4 w-4" />
                     Live Demo
                   </Link>
-                </Button>
+                </Button> */}
               </CardFooter>
             </Card>
           </div>
           <div className="text-center mt-8">
             <Button variant="outline" asChild>
-              <Link href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+              <Link href="https://github.com/viwsliu" target="_blank" rel="noopener noreferrer">
                 <Github className="mr-2 h-4 w-4" />
                 View more on GitHub
               </Link>
@@ -303,7 +320,7 @@ export default function Home() {
 
               <div className="text-center pt-4">
                 <Button asChild>
-                  <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                  <Link href="/Vincent_Liu_Resume.pdf" target="_blank" rel="noopener noreferrer">
                     <FileText className="mr-2 h-4 w-4" />
                     Download Full Resume
                   </Link>
@@ -318,23 +335,23 @@ export default function Home() {
           <div className="max-w-3xl mx-auto space-y-8">
             <h2 className="text-3xl font-bold text-center">Get In Touch</h2>
             <p className="text-center text-muted-foreground">
-              I'm currently open to new opportunities and collaborations. Feel free to reach out!
+              I'm open to new opportunities and collaborations. Feel free to reach out!
             </p>
             <div className="grid md:grid-cols-3 gap-6 text-center">
               <div className="p-6 bg-muted rounded-lg hover:shadow-md transition-all duration-300">
                 <Mail className="mx-auto h-8 w-8 mb-2" />
                 <h3 className="font-medium">Email</h3>
-                <p className="text-sm text-muted-foreground">your.email@example.com</p>
+                <p className="text-sm text-muted-foreground">vtliului@gmail.com</p>
               </div>
               <div className="p-6 bg-muted rounded-lg hover:shadow-md transition-all duration-300">
                 <Github className="mx-auto h-8 w-8 mb-2" />
                 <h3 className="font-medium">GitHub</h3>
-                <p className="text-sm text-muted-foreground">github.com/yourusername</p>
+                <p className="text-sm text-muted-foreground">github.com/viwsliu</p>
               </div>
               <div className="p-6 bg-muted rounded-lg hover:shadow-md transition-all duration-300">
                 <Linkedin className="mx-auto h-8 w-8 mb-2" />
                 <h3 className="font-medium">LinkedIn</h3>
-                <p className="text-sm text-muted-foreground">linkedin.com/in/yourusername</p>
+                <p className="text-sm text-muted-foreground">linkedin.com/in/vincent-liu003/</p>
               </div>
             </div>
           </div>
@@ -345,22 +362,22 @@ export default function Home() {
       <footer className="border-t py-6 md:py-8">
         <div className="container flex flex-col md:flex-row justify-between items-center">
           <div className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Your Name. All rights reserved.
+            {/* © {new Date().getFullYear()} Your Name. All rights reserved. */}
           </div>
           <div className="flex items-center gap-4 mt-4 md:mt-0">
-            <Link href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+            <Link href="https://github.com/viwsliu" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon">
                 <Github className="h-4 w-4" />
                 <span className="sr-only">GitHub</span>
               </Button>
             </Link>
-            <Link href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+            <Link href="https://www.linkedin.com/in/vincent-liu003/" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon">
                 <Linkedin className="h-4 w-4" />
                 <span className="sr-only">LinkedIn</span>
               </Button>
             </Link>
-            <Link href="mailto:your.email@example.com">
+            <Link href="mailto:vtliului@gmail.com">
               <Button variant="ghost" size="icon">
                 <Mail className="h-4 w-4" />
                 <span className="sr-only">Email</span>
