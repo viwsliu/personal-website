@@ -3,8 +3,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Vincent Liu',
-  description: 'Created with v0',
-  generator: 'v0.dev',
+  description: 'Vincent Liu Personal Website',
 }
 
 export default function RootLayout({

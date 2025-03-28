@@ -70,9 +70,9 @@ export default function Home() {
           <div className="flex flex-col md:flex-row gap-8 items-center">
             <div className="md:w-1/2 space-y-4 bg-black bg-opacity-50 p-6 rounded-xl">
               <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
-                Hi, I'm <span className="text-primary">Vincent Liu!</span>
+                <span className="text-white">Hi, I'm Vincent Liu!</span>
               </h1>
-              <p className="text-xl text-muted-foreground">
+              <p className="text-xl text-gray-400">
                 Software Developer experienced in Full Stack Web Development.
               </p>
               <div className="flex gap-4 pt-4">
@@ -105,9 +105,9 @@ export default function Home() {
               </p>  
               <p className="text-lg text-muted-foreground">
                 Some of my other interests include cryptography, aviation, and history.
-                I'm especially fascinated by how technology has rapidly advanced over time—and how it will continue to shape our future.
+                Rather than just observing how technology evolves, I’m driven to be part of building what comes next. 
               </p>
-              <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div className="p-4 bg-background rounded-lg shadow-sm">
                   <h3 className="font-medium">Programming Languages</h3>
                   <p className="text-sm text-muted-foreground">
@@ -151,7 +151,7 @@ export default function Home() {
                 <div className="aspect-video rounded-md overflow-hidden bg-muted mb-4">
                 <img
                   src="/cognoso_logo.png"
-                  alt="Project One Screenshot"
+                  alt="P1 Screenshot"
                   className="object-contain w-full h-full transition-transform duration-500 group-hover:scale-105"
                 />
                 </div>
@@ -186,7 +186,7 @@ export default function Home() {
                 <div className="aspect-video rounded-md overflow-hidden bg-muted mb-4">
                   <img
                     src="/UXly_chbot_logo.png"
-                    alt="Project Two Screenshot"
+                    alt="P2 Screenshot"
                     className="object-contain w-full h-full transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
@@ -222,7 +222,7 @@ export default function Home() {
                 <div className="aspect-video rounded-md overflow-hidden bg-muted mb-4">
                   <img
                     src="/Notesheet_Ed.png?height=200&width=400"
-                    alt="Project Three Screenshot"
+                    alt="P3 Screenshot"
                     className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
@@ -362,7 +362,7 @@ export default function Home() {
       <footer className="border-t py-6 md:py-8">
         <div className="container flex flex-col md:flex-row justify-between items-center">
           <div className="text-sm text-muted-foreground">
-            {/* © {new Date().getFullYear()} Your Name. All rights reserved. */}
+            © {new Date().getFullYear()} Vincent WS Liu
           </div>
           <div className="flex items-center gap-4 mt-4 md:mt-0">
             <Link href="https://github.com/viwsliu" target="_blank" rel="noopener noreferrer">
