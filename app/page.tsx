@@ -1,5 +1,6 @@
 "use client"
 
+import { useState } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
@@ -17,7 +18,14 @@ export default function Home() {
       document.documentElement.classList.add("dark")
     }
   }, [])
-
+  
+function copyToClipboard(text: string) {
+  navigator.clipboard.writeText(text).then(() => {
+    console.log("Email copied to clipboard")
+  }).catch(err => {
+    console.error("Failed to copy email: ", err)
+  })
+}
   return (
     <div className="flex flex-col min-h-screen bg-background text-foreground transition-colors duration-300">
       <MouseTracker />
@@ -55,9 +63,9 @@ export default function Home() {
               </Button>
             </Link>
             <Link href="vtliului@gmail.com">
-              <Button variant="ghost" size="icon">
+              <Button variant="ghost" size="icon" onClick={() => copyToClipboard("vtliului@gmail.com")}>
                 <Mail className="h-5 w-5" />
-                <span className="sr-only">Email</span>
+                <span className="sr-only">Copy Email</span>
               </Button>
             </Link>
           </div>
