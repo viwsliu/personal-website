@@ -200,7 +200,7 @@ export default function Home() {
                 <Button variant="outline" size="sm" asChild>
                   <Link href="https://github.com/UXLY-Chatbot" target="_blank" rel="noopener noreferrer">
                     <Github className="mr-2 h-4 w-4" />
-                    Code (Private Repo)
+                    Code
                   </Link>
                 </Button>
                 {/* <Button size="sm" asChild>
