@@ -221,7 +221,7 @@ function copyToClipboard(text: string) {
             </Card>
 
             {/* Project 3 */}
-            <Card className="group hover:shadow-lg transition-all duration-300">
+            {/* <Card className="group hover:shadow-lg transition-all duration-300">
               <CardHeader>
                 <CardTitle>NoteSheet Editor</CardTitle>
                 <CardDescription>NoteSheet / Cheatsheet editor Tool for students</CardDescription>
@@ -250,14 +250,41 @@ function copyToClipboard(text: string) {
                     Code
                   </Link>
                 </Button>
-                {/* <Button size="sm" asChild>
-                  <Link href="https://vincentl03.github.io/CSE160-Live/Assignment_5c/asg5c.html" target="_blank" rel="noopener noreferrer">
-                    <ExternalLink className="mr-2 h-4 w-4" />
-                    Live Demo
+              </CardFooter>
+            </Card> */}
+            <Card className="group hover:shadow-lg transition-all duration-300">
+              <CardHeader>
+                <CardTitle>SecureAI</CardTitle>
+                <CardDescription>GitHub Code Vulnerability Scanner</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="aspect-video rounded-md overflow-hidden bg-muted mb-4">
+                  <img
+                    src="/SecureAI.png?height=200&width=400"
+                    alt="SecureAI Screenshot"
+                    className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
+                <p className="text-sm text-muted-foreground mb-2">
+                  A full-stack tool that automates security audits on public GitHub repositories—built for Track 4: Cybersecurity for AI Deployments. It combines LLM-powered code analysis and malware detection to uncover vulnerabilities across the stack.
+                </p>
+                <ul className="text-sm text-muted-foreground list-disc pl-5 space-y-1">
+                  <li><strong>LLM Code Auditing:</strong> Uses Gemini 2.0 Flash to detect risks like prompt injection and poor error handling, with file paths, line numbers, and fix suggestions.</li>
+                  <li><strong>Dependency & Executable Scanning:</strong> Flags insecure packages and unidentified executables using MetaDefender’s API (~1.2M+ signatures).</li>
+                  <li><strong>Sandboxing:</strong> Executes unknown files in an isolated environment to observe malicious behavior.</li>
+                  <li><strong>Dashboard UI:</strong> Clean, interactive frontend to explore issues by type, severity, and resolution.</li>
+                </ul>
+              </CardContent>
+              <CardFooter className="flex justify-between">
+                <Button variant="outline" size="sm" asChild>
+                  <Link href="https://github.com/Jeeevii/SecureAI" target="_blank" rel="noopener noreferrer">
+                    <Github className="mr-2 h-4 w-4" />
+                    Code
                   </Link>
-                </Button> */}
+                </Button>
               </CardFooter>
             </Card>
+
           </div>
           <div className="text-center mt-8">
             <Button variant="outline" asChild>
