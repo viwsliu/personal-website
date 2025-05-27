@@ -266,10 +266,11 @@ function copyToClipboard(text: string) {
                   />
                 </div>
                 <p className="text-sm text-muted-foreground mb-2">
-                  A full-stack tool that automates security audits on public GitHub repositories—built for Track 4: Cybersecurity for AI Deployments. It combines LLM-powered code analysis and malware detection to uncover vulnerabilities across the stack.
+                  A full-stack tool that automates security audits on public GitHub repositories—built for Cybersecurity for AI Deployments.
+                  It combines LLM-powered code analysis and malware detection to uncover vulnerabilities across the stack.
                 </p>
                 <ul className="text-sm text-muted-foreground list-disc pl-5 space-y-1">
-                  <li><strong>LLM Code Auditing:</strong> Uses Gemini 2.0 Flash to detect risks like prompt injection and poor error handling, with file paths, line numbers, and fix suggestions.</li>
+                  <li><strong>LLM Code Auditing:</strong> Detect risks like prompt injection and poor error handling, with file paths, line numbers, and fix suggestions.</li>
                   <li><strong>Dependency & Executable Scanning:</strong> Flags insecure packages and unidentified executables using MetaDefender’s API (~1.2M+ signatures).</li>
                   <li><strong>Sandboxing:</strong> Executes unknown files in an isolated environment to observe malicious behavior.</li>
                   <li><strong>Dashboard UI:</strong> Clean, interactive frontend to explore issues by type, severity, and resolution.</li>
