@@ -341,14 +341,14 @@ function copyToClipboard(text: string) {
                 <div className="bg-background p-6 rounded-lg shadow-sm hover:shadow-md transition-all duration-300">
                   <div className="flex justify-between items-start mb-2">
                     <h4 className="font-medium">Bachelor of Science, Computer Science</h4>
-                    <span className="text-sm text-muted-foreground">2021 - 2025</span>
+                    <span className="text-sm text-muted-foreground">Aug, 2021 - Jun, 2025</span>
                   </div>
                   <h5 className="text-primary">University of California, Santa Cruz</h5>
                 </div>
                 <div className="bg-background p-6 rounded-lg shadow-sm hover:shadow-md transition-all duration-300">
                   <div className="flex justify-between items-start mb-2">
                     <h4 className="font-medium">High School Diploma</h4>
-                    <span className="text-sm text-muted-foreground">2017 - 2021</span>
+                    <span className="text-sm text-muted-foreground">Aug, 2017 - Jun, 2021</span>
                   </div>
                   <h5 className="text-primary">El Cerrito High School</h5>
                 </div>
