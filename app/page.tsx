@@ -267,7 +267,7 @@ function copyToClipboard(text: string) {
                 </div>
                 <p className="text-sm text-muted-foreground mb-2">
                   A full-stack tool that automates security audits on public GitHub repositories—built for Cybersecurity for AI Deployments.
-                  It combines LLM-powered code analysis and malware detection to uncover vulnerabilities across the stack.
+                  It combines LLM-powered code analysis and malware detection to uncover vulnerabilities.
                 </p>
                 <ul className="text-sm text-muted-foreground list-disc pl-5 space-y-1">
                   <li><strong>LLM Code Auditing:</strong> Detect risks like prompt injection and poor error handling, with file paths, line numbers, and fix suggestions.</li>
