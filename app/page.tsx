@@ -323,7 +323,7 @@ function copyToClipboard(text: string) {
                   <div className="bg-background p-6 rounded-lg shadow-sm hover:shadow-md transition-all duration-300">
                     <div className="flex justify-between items-start mb-2">
                       <h4 className="font-medium">Reader</h4>
-                      <span className="text-sm text-muted-foreground">January - June, 2025</span>
+                      <span className="text-sm text-muted-foreground">January - March, 2025</span>
                     </div>
                     <h5 className="text-primary mb-2">Baskin School of Engineering, UC Santa Cruz</h5>
                     <p className="text-sm text-muted-foreground">
