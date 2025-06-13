@@ -204,12 +204,6 @@ function copyToClipboard(text: string) {
                     className="object-contain w-full h-full transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
-                <p className="text-sm text-muted-foreground">
-                  A customer service chatbot designed to handle product inquiries and order-related tasks using LangChain, LangGraph, LiteLLM, and Aporia GuardRails.
-                  The Chatbot is designed to be integrated with Woocommerce (Wordpress) e-commerce sites with large product catalogs.
-                  Features include User intent detection, Management of dialogue context, Product recommendation, Product Lookup, Order Lookup, and Order Placement.
-                </p>
-
                 <p className="text-sm text-muted-foreground mb-2">
                   A full-stack tool that automates security audits on public GitHub repositories—built for Cybersecurity for AI Deployments.
                   It combines LLM-powered code analysis and malware detection to uncover vulnerabilities.
