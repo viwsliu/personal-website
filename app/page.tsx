@@ -198,11 +198,16 @@ function copyToClipboard(text: string) {
                     className="object-contain w-full h-full transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
-                <p className="text-sm text-muted-foreground">
-                  A customer service chatbot designed to handle product inquiries and order-related tasks using LangChain, LangGraph, LiteLLM, and Aporia GuardRails.
-                  The Chatbot is designed to be integrated with Woocommerce (Wordpress) e-commerce sites with large product catalogs.
-                  Features include User intent detection, Management of dialogue context, Product recommendation, Product Lookup, Order Lookup, and Order Placement.
+                <p className="text-sm text-muted-foreground mb-2">
+                  A full-stack web application that lets users upload PDFs (e.g., textbooks) to automatically generate flashcards—designed to enhance study efficiency through AI.
+                  Includes secure user authentication, responsive design, and an interactive chatbot powered by Retrieval-Augmented Generation (RAG).
                 </p>
+                <ul className="text-sm text-muted-foreground list-disc pl-5 space-y-1">
+                  <li><strong>AI Flashcard Generation:</strong> Automatically extracts key concepts and definitions from uploaded PDFs to create structured flashcards.</li>
+                  <li><strong>RAG-Powered Chatbot:</strong> Answers user questions using context pulled directly from their uploaded documents—no external data sources.</li>
+                  <li><strong>Authentication & User Management:</strong> Supports secure login, personalized content, and persistent study sessions.</li>
+                  <li><strong>Responsive UI:</strong> Optimized for desktop and mobile, with a clean interface for reviewing flashcards and interacting with the chatbot.</li>
+                </ul>
               </CardContent>
               <CardFooter className="flex justify-between">
                 <Button variant="outline" size="sm" asChild>
@@ -313,9 +318,9 @@ function copyToClipboard(text: string) {
                     </div>
                     <h5 className="text-primary mb-2">UXly - Intern</h5>
                     <p className="text-sm text-muted-foreground">
-                      Developed a multi-tool customer support chatbot for WooCommerce-based e-commerce sites, 
-                      enabling users to add items to cart, check out, look up products, and track orders through natural language. 
-                      Designed to integrate with long-form product catalogs (e.g., PDFs), enhancing user experience and reducing support overhead.
+                      Developed a multi-functional AI-powered customer support chatbot integrated into an e-commerce web application.
+                      Enabled seamless user interaction through natural language processing (NLP) to guide customers through product discovery and order workflows.
+                      Integrated support for long-form product catalogs (e.g., PDFs), improving user engagement and reducing customer service workload.
                     </p>
                   </div>
                 </div>
