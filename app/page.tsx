@@ -163,10 +163,16 @@ function copyToClipboard(text: string) {
                   className="object-contain w-full h-full transition-transform duration-500 group-hover:scale-105"
                 />
                 </div>
-                <p className="text-sm text-muted-foreground">
-                A full-stack web app that lets users upload PDFs (e.g., textbooks) to automatically generate flashcards for studying.
-                Features include user authentication, responsive design, AI-driven flashcard generation, and a chatbot that uses a Retrieval-Augmented Generation (RAG) model to answer questions based solely on the user's uploaded content
+                <p className="text-sm text-muted-foreground mb-2">
+                  A full-stack web application that lets users upload PDFs (e.g., textbooks) to automatically generate flashcards—designed to enhance study efficiency through AI.
+                  Includes secure user authentication, responsive design, and an interactive chatbot powered by Retrieval-Augmented Generation (RAG).
                 </p>
+                <ul className="text-sm text-muted-foreground list-disc pl-5 space-y-1">
+                  <li><strong>AI Flashcard Generation:</strong> Automatically extracts key concepts and definitions from uploaded PDFs to create structured flashcards.</li>
+                  <li><strong>RAG-Powered Chatbot:</strong> Answers user questions using context pulled directly from their uploaded documents—no external data sources.</li>
+                  <li><strong>Authentication & User Management:</strong> Supports secure login, personalized content, and persistent study sessions.</li>
+                  <li><strong>Responsive UI:</strong> Optimized for desktop and mobile, with a clean interface for reviewing flashcards and interacting with the chatbot.</li>
+                </ul>
               </CardContent>
               <CardFooter className="flex justify-between">
                 <Button variant="outline" size="sm" asChild>
@@ -198,15 +204,21 @@ function copyToClipboard(text: string) {
                     className="object-contain w-full h-full transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
+                <p className="text-sm text-muted-foreground">
+                  A customer service chatbot designed to handle product inquiries and order-related tasks using LangChain, LangGraph, LiteLLM, and Aporia GuardRails.
+                  The Chatbot is designed to be integrated with Woocommerce (Wordpress) e-commerce sites with large product catalogs.
+                  Features include User intent detection, Management of dialogue context, Product recommendation, Product Lookup, Order Lookup, and Order Placement.
+                </p>
+
                 <p className="text-sm text-muted-foreground mb-2">
-                  A full-stack web application that lets users upload PDFs (e.g., textbooks) to automatically generate flashcards—designed to enhance study efficiency through AI.
-                  Includes secure user authentication, responsive design, and an interactive chatbot powered by Retrieval-Augmented Generation (RAG).
+                  A full-stack tool that automates security audits on public GitHub repositories—built for Cybersecurity for AI Deployments.
+                  It combines LLM-powered code analysis and malware detection to uncover vulnerabilities.
                 </p>
                 <ul className="text-sm text-muted-foreground list-disc pl-5 space-y-1">
-                  <li><strong>AI Flashcard Generation:</strong> Automatically extracts key concepts and definitions from uploaded PDFs to create structured flashcards.</li>
-                  <li><strong>RAG-Powered Chatbot:</strong> Answers user questions using context pulled directly from their uploaded documents—no external data sources.</li>
-                  <li><strong>Authentication & User Management:</strong> Supports secure login, personalized content, and persistent study sessions.</li>
-                  <li><strong>Responsive UI:</strong> Optimized for desktop and mobile, with a clean interface for reviewing flashcards and interacting with the chatbot.</li>
+                  <li><strong>LLM Code Auditing:</strong> Detect risks like prompt injection and poor error handling, with file paths, line numbers, and fix suggestions.</li>
+                  <li><strong>Dependency & Executable Scanning:</strong> Flags insecure packages and unidentified executables using MetaDefender’s API (~1.2M+ signatures).</li>
+                  <li><strong>Sandboxing:</strong> Executes unknown files in an isolated environment to observe malicious behavior.</li>
+                  <li><strong>Dashboard UI:</strong> Clean, interactive frontend to explore issues by type, severity, and resolution.</li>
                 </ul>
               </CardContent>
               <CardFooter className="flex justify-between">
@@ -328,7 +340,7 @@ function copyToClipboard(text: string) {
                   <div className="bg-background p-6 rounded-lg shadow-sm hover:shadow-md transition-all duration-300">
                     <div className="flex justify-between items-start mb-2">
                       <h4 className="font-medium">Reader</h4>
-                      <span className="text-sm text-muted-foreground">January - March, 2025</span>
+                      <span className="text-sm text-muted-foreground">January - June, 2025</span>
                     </div>
                     <h5 className="text-primary mb-2">Baskin School of Engineering, UC Santa Cruz</h5>
                     <p className="text-sm text-muted-foreground">
