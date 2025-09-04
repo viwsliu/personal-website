@@ -119,25 +119,25 @@ function copyToClipboard(text: string) {
                 <div className="p-4 bg-background rounded-lg shadow-sm">
                   <h3 className="font-medium">Programming Languages</h3>
                   <p className="text-sm text-muted-foreground">
-                    Python, C++, C, JavaScript, TypeScript, SQL, Assembly, Haskell
+                    Python, C++, C, JavaScript, TypeScript, SQL, Assembly
                   </p>
                 </div>
                 <div className="p-4 bg-background rounded-lg shadow-sm">
                   <h3 className="font-medium">Frameworks & Libraries</h3>
                   <p className="text-sm text-muted-foreground">
-                    React, Flask, Node.js, Express.js, WebGL, Material UI, Tailwind CSS, LiteLLM (LangChain, LangGraph), ReportLab
+                    React, Flask, Node.js, Express.js, WebGL, Material UI, LiteLLM (LangChain, LangGraph)
                   </p>
                 </div>
                 <div className="p-4 bg-background rounded-lg shadow-sm">
                   <h3 className="font-medium">Tools & Platforms</h3>
                   <p className="text-sm text-muted-foreground">
-                    Git, Docker, RESTful APIs, Nginx, Linux, VS Code,
+                    Git, Docker, RESTful APIs, Nginx, Linux, VS Code
                   </p>
                 </div>
                 <div className="p-4 bg-background rounded-lg shadow-sm">
                   <h3 className="font-medium">Concepts & Methodologies</h3>
                   <p className="text-sm text-muted-foreground">
-                    Object-Oriented Programming, Agile, Scrum, Test-Driven Development
+                    Agile (Scrum), Test-Driven Development
                   </p>
                 </div>
               </div>
