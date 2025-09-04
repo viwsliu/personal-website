@@ -194,7 +194,7 @@ function copyToClipboard(text: string) {
             <Card className="group hover:shadow-lg transition-all duration-300">
               <CardHeader>
                 <CardTitle>UXly Multi-Tool Customer Support Chatbot</CardTitle>
-                <CardDescription>A Customer Service Chatbot Plugin for WooCommerce (WordPress) sites</CardDescription>
+                <CardDescription>A Customer Service Chatbot Plugin</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="aspect-video rounded-md overflow-hidden bg-muted mb-4">
@@ -204,16 +204,18 @@ function copyToClipboard(text: string) {
                     className="object-contain w-full h-full transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
-                <p className="text-sm text-muted-foreground mb-2">
-                  A full-stack tool that automates security audits on public GitHub repositories—built for Cybersecurity for AI Deployments.
-                  It combines LLM-powered code analysis and malware detection to uncover vulnerabilities.
-                </p>
-                <ul className="text-sm text-muted-foreground list-disc pl-5 space-y-1">
-                  <li><strong>LLM Code Auditing:</strong> Detect risks like prompt injection and poor error handling, with file paths, line numbers, and fix suggestions.</li>
-                  <li><strong>Dependency & Executable Scanning:</strong> Flags insecure packages and unidentified executables using MetaDefender’s API (~1.2M+ signatures).</li>
-                  <li><strong>Sandboxing:</strong> Executes unknown files in an isolated environment to observe malicious behavior.</li>
-                  <li><strong>Dashboard UI:</strong> Clean, interactive frontend to explore issues by type, severity, and resolution.</li>
-                </ul>
+                  <p className="text-sm text-muted-foreground mb-2">
+                    A multi-tool customer service chatbot designed to handle product inquiries and order-related tasks using LangChain, LangGraph, LiteLLM, and Aporia GuardRails.
+                    Designed for e-commerce sites with large product catalogs.
+                    Features include: User intent detection, Management of dialogue context, Product recommendation, Product Lookup, Order Lookup, and Order Placement; all through natural language processing.
+                  </p>
+                  <ul className="text-sm text-muted-foreground list-disc pl-5 space-y-1">
+                    <li><strong>Intent Detection:</strong> Classifies user requests (e.g., product info, order status, or checkout) to route queries correctly.</li>
+                    <li><strong>Context Management:</strong> Maintains session memory across turns for coherent, personalized conversations.</li>
+                    <li><strong>Product Integration:</strong> Retrieves catalog data to power search, recommendations, and detailed product lookups.</li>
+                    <li><strong>Order Tools:</strong> Tracks orders, checks shipping status, and even supports order placement via natural language.</li>
+                    <li><strong>Guardrails & Safety:</strong> Uses Aporia GuardRails to prevent misuse, enforce policies, and handle edge cases gracefully.</li>
+                  </ul>
               </CardContent>
               <CardFooter className="flex justify-between">
                 <Button variant="outline" size="sm" asChild>
@@ -289,7 +291,7 @@ function copyToClipboard(text: string) {
               </CardContent>
               <CardFooter className="flex justify-between">
                 <Button variant="outline" size="sm" asChild>
-                  <Link href="https://github.com/Jeeevii/SecureAI" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://github.com/viwsliu/SecureAI" target="_blank" rel="noopener noreferrer">
                     <Github className="mr-2 h-4 w-4" />
                     Code
                   </Link>
