@@ -59,15 +59,13 @@ export default function Home() {
           ref={(el) => (sectionsRef.current[0] = el)}
           className="min-h-screen flex items-center opacity-0 relative"
         >
-          <div className="absolute inset-0 -mx-6 sm:-mx-8 lg:-mx-16">
-            <div className="relative w-full h-full">
-              <img
-                src = "/background1.jpg"
-                alt=""
-                className="w-full h-full object-cover opacity-80 dark:opacity-60"
-              />
-              <div className="absolute inset-0 bg-gradient-to-br from-background/90 via-background/70 to-background/50"></div>
-            </div>
+          <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-screen h-full">
+            <img
+              src="/background1.jpg"
+              alt=""
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-br from-background/90 via-background/70 to-background/50" />
           </div>
 
           <div className="grid lg:grid-cols-5 gap-12 sm:gap-16 w-full relative z-10">
@@ -83,8 +81,8 @@ export default function Home() {
 
               <div className="space-y-6 max-w-md">
                 <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
-                  Software Developer with experience in
-                  <span className="text-foreground"> Full-Stack Web Development</span>,
+                  <span className="text-foreground"> Software Developer</span> with experience in
+                  <span className="text-foreground"> Full-Stack Web Development </span>
                   {/* <span className="text-foreground"> technology</span>, */}
                   and
                   <span className="text-foreground"> Machine Learning</span>.
@@ -93,9 +91,8 @@ export default function Home() {
                 <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 text-sm text-muted-foreground">
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                    Available for work
+                    Available for work | San Francisco, United States
                   </div>
-                  <div>  |  San Francisco, United States</div>
                 </div>
               </div>
             </div>
@@ -452,7 +449,7 @@ export default function Home() {
         <section id="connect" ref={(el) => (sectionsRef.current[5] = el)} className="py-20 sm:py-32 opacity-0">
           <div className="grid lg:grid-cols-2 gap-12 sm:gap-16">
             <div className="space-y-6 sm:space-y-8">
-              <h2 className="text-3xl sm:text-4xl font-light">Let's Connect</h2>
+              <h2 className="text-3xl sm:text-4xl font-light">Let's Connect!</h2>
 
               <div className="space-y-6">
                 <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
@@ -505,7 +502,7 @@ export default function Home() {
             </div>
 
             <div className="space-y-6 sm:space-y-8">
-              <div className="text-sm text-muted-foreground font-mono">SEND A MESSAGE</div>
+              <div className="text-sm text-muted-foreground font-mono">SEND A MESSAGE!</div>
 
               <form className="space-y-6">
                 <div className="space-y-2">
@@ -572,51 +569,7 @@ export default function Home() {
               <div className="text-sm text-muted-foreground">© 2025 Vincent Liu</div>
             </div>
 
-            <div className="flex items-center gap-4">
-              <button
-                onClick={toggleTheme}
-                className="group p-3 rounded-lg border border-border hover:border-muted-foreground/50 transition-all duration-300"
-                aria-label="Toggle theme"
-              >
-                {isDark ? (
-                  <svg
-                    className="w-4 h-4 text-muted-foreground group-hover:text-foreground transition-colors duration-300"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1zm7-4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                ) : (
-                  <svg
-                    className="w-4 h-4 text-muted-foreground group-hover:text-foreground transition-colors duration-300"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
-                  </svg>
-                )}
-              </button>
-
-              <button className="group p-3 rounded-lg border border-border hover:border-muted-foreground/50 transition-all duration-300">
-                <svg
-                  className="w-4 h-4 text-muted-foreground group-hover:text-foreground transition-colors duration-300"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
-                  />
-                </svg>
-              </button>
-            </div>
+            
           </div>
         </footer>
       </main>
