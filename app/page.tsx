@@ -371,7 +371,7 @@ export default function Home() {
                     "A multi-tool customer support chatbot made to handle product inquiries, order placement & tracking, and session-based assistance.",
                   tech: ["Python", "React", "TypeScript", "JavaScript"],
                   github: "https://github.com/UXLY-Chatbot",
-                  image: "/UXLy_chatbot_logo.png",
+                  image: "/UXly_chatbot_logo.png",
                 },
                 {
                   title: "SecureAI",
