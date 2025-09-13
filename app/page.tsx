@@ -395,7 +395,7 @@ export default function Home() {
                     "A Full-stack tool that generates notesheets for students, using a backend algorithm inspired by the 2D knapsack problem to optimize whitespace and layout efficiency for PDF generation.",
                   tech: ["Python", "Javascript", "HTML", "CSS"],
                   github: "https://github.com/sopwithcamel110/NED",
-                  image: "/NoteSheet_Ed.png",
+                  image: "/Notesheet_Ed.png",
                 },
               ].map((project, index) => (
                 <article
