@@ -84,8 +84,8 @@ export default function Home() {
                   <span className="text-foreground"> Software Developer</span> with experience in
                   <span className="text-foreground"> Full-Stack Web Development </span>
                   {/* <span className="text-foreground"> technology</span>, */}
-                  and
-                  <span className="text-foreground"> Machine Learning</span>.
+                  {/* and */}
+                  {/* <span className="text-foreground"> Machine Learning</span>. */}
                 </p>
 
                 <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 text-sm text-muted-foreground">
