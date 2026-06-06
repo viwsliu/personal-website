@@ -1,0 +1,39 @@
+[
+  {
+    "title": "Exia Labs - Red",
+    "description": "Multi-agent AI system for queries regarding PLA military branches, leveraging a RAG architecture with semantic vector search, document retrieval pipelines, and tool-assisted research workflows.",
+    "tech": ["Python", "React", "TypeScript", "JavaScript"],
+    "github": "",
+    "external_link": "https://red.dev.exialabs.com/wp",
+    "image": "/RedLogo.png"
+  },
+  {
+    "title": "UXly Multi-Tool Customer Chatbot",
+    "description": "A multi-tool customer support chatbot made to handle product inquiries, order placement & tracking, and session-based assistance.",
+    "tech": ["Python", "React", "TypeScript", "JavaScript"],
+    "github": "",
+    "hidden_link": "https://github.com/UXLY-Chatbot",
+    "image": "/UXly_chatbot_logo.png"
+  },
+  {
+    "title": "SecureAI",
+    "description": "A Full-stack tool that automates security audits on public GitHub repositories",
+    "tech": ["Python", "TypeScript", "React"],
+    "github": "https://github.com/viwsliu/SecureAI",
+    "image": "/SecureAI.png"
+  },
+  {
+    "title": "Cognoso",
+    "description": "A Flashcard management tool with PDF extraction, auto-generation, and chatbot that answers questions from uploaded study material.",
+    "tech": ["Python", "TypeScript", "React", "Rust", "CSS"],
+    "github": "https://github.com/andychenbruce/COGNOSO",
+    "image": "/cognoso_logo.png"
+  },
+  {
+    "title": "NoteSheet Editor",
+    "description": "A Full-stack tool that generates notesheets for students, using a backend algorithm inspired by the 2D knapsack problem to optimize whitespace and layout efficiency for PDF generation.",
+    "tech": ["Python", "Javascript", "HTML", "CSS"],
+    "github": "https://github.com/sopwithcamel110/NED",
+    "image": "/Notesheet_Ed.png"
+  }
+]
