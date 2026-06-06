@@ -328,7 +328,7 @@ export default function Home() {
         className="min-h-screen pt-20 sm:pt-32 pb-20 sm:pb-32 opacity-0 max-w-5xl mx-auto px-6 sm:px-8 lg:px-16"
       >
         <div className="space-y-12 sm:space-y-16">
-          <h2 className="text-2xl sm:text-3xl font-light">Highlighted Projects</h2>
+          <h2 className="text-2xl sm:text-3xl font-light">Project Highlight</h2>
           <div className="grid gap-4 sm:gap-5 md:grid-cols-2 lg:grid-cols-6">
               {projectsData.map((project, index) => {
                 const totalProjects = projectsData.length;
