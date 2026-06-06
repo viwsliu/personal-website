@@ -4,7 +4,7 @@
     "end_date": "Jun 2026",
     "role": "Software Engineer Intern",
     "company": "Exia Labs",
-    "description": "Multi-agent AI system for answering complex queries regarding PLA military branches, leveraging a RAG architecture with semantic vector search, document retrieval pipelines, and tool-assisted research workflows.",
+    "description": "Assisted in the development of products such as Blue and Red for use by the US Department of Defense",
     "tech": ["Python", "TypeScript"]
   },
   {
