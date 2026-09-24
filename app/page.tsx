@@ -84,7 +84,7 @@ export default function Home() {
 
               <div className="space-y-6 max-w-md">
                 <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-                  <span className="text-foreground"> Software Developer</span> with experience in
+                  <span className="text-foreground"> Software Engineer</span> with experience in
                   <span className="text-foreground"> Full-Stack Web Development </span>
                   and
                   <span className="text-foreground"> Machine Learning</span>.
@@ -92,8 +92,8 @@ export default function Home() {
 
                 <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 text-xs text-muted-foreground">
                   <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                    Available for work | San Francisco, United States
+                    {/* <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div> */}
+                    Enjoying Life | California, United States
                   </div>
                 </div>
               </div>
@@ -191,9 +191,9 @@ export default function Home() {
                       "Defense Tech",
                       "Agentic AI",
                       "Cloud Infrastructure",
-                      "Aviation",
+                      "Firmware & Embedded Systems",
                       "Cybersecurity & Encryption",
-                      "Travel & Photography",
+                      "Travel & Photography"
                     ].map((interest) => (
                       <span
                         key={interest}
@@ -254,7 +254,7 @@ export default function Home() {
                   <div className="lg:col-span-10 space-y-4">
                     <div className="space-y-1">
                       <div className="flex items-start justify-between gap-4">
-                        <h3 className="text-base sm:text-lg font-medium">{job.role}</h3>
+                        <h3 className="text-base sm:text-lg font-medium">{job.company}</h3>
                         <div className="flex flex-wrap gap-2 justify-end">
                           {job.tech.map((tech) => (
                             <span
@@ -266,7 +266,7 @@ export default function Home() {
                           ))}
                         </div>
                       </div>
-                      <div className="text-xs text-muted-foreground">{job.company}</div>
+                      <div className="text-base text-muted-foreground">{job.role}</div>
                     </div>
                     <p className="text-muted-foreground leading-relaxed">{job.description}</p>
                   </div>

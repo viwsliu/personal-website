@@ -1,4 +1,10 @@
-[
+[  {
+    "start_date": "Sep 2026",
+    "end_date": "Present",
+    "role": "Software Engineer",
+    "company": "Proper Voltage",
+    "tech": ["C", "C++", "Rust", "TypeScript"]
+  },
   {
     "start_date": "Nov 2025",
     "end_date": "Jun 2026",
